@@ -1,1 +1,1 @@
-
+console.log("NovaSphere Loaded");
