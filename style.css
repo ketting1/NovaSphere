@@ -133,3 +133,17 @@ font-size:36px;
 color:#2563eb;
 margin:0;
 }
+.dark{
+background:#111827;
+color:white;
+}
+
+.dark .card{
+background:#1f2937;
+color:white;
+}
+
+.dark .stat{
+background:#1f2937;
+color:white;
+}
