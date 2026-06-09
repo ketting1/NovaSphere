@@ -147,3 +147,12 @@ color:white;
 background:#1f2937;
 color:white;
 }
+.clock-section{
+padding:40px 20px;
+text-align:center;
+}
+
+#clock{
+font-size:48px;
+color:#2563eb;
+}
