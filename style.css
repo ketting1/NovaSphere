@@ -23,6 +23,12 @@ nav a{
 color:white;
 text-decoration:none;
 margin-left:20px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
 }
 
 .hero{
