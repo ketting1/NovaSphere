@@ -110,4 +110,26 @@ background:#0f172a;
 color:white;
 text-align:center;
 padding:20px;
+} 
+.stats{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:50px 20px;
+}
+
+.stat{
+background:white;
+padding:25px;
+border-radius:20px;
+min-width:180px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.stat h2{
+font-size:36px;
+color:#2563eb;
+margin:0;
 }
