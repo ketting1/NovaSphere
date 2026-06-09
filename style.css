@@ -55,7 +55,26 @@ border-radius:40px;
 font-weight:bold;
 cursor:pointer;
 }
+.stats{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:40px 20px;
+}
 
+.stat{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    min-width:150px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat h2{
+    color:#0f2a1f;
+}
 .cards{
 display:flex;
 flex-wrap:wrap;
