@@ -7,3 +7,10 @@ alert("Welcome to NovaSphere 🚀");
 
 });
 
+console.log("NovaSphere Loaded");
+
+function toggleDarkMode(){
+
+document.body.classList.toggle("dark");
+
+}
