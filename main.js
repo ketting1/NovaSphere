@@ -1,16 +1,20 @@
 console.log("NovaSphere Loaded");
 
-document.querySelector("button")
-.addEventListener("click",function(){
-
-alert("Welcome to NovaSphere 🚀");
-
-});
-
-console.log("NovaSphere Loaded");
-
-function toggleDarkMode(){
-
-document.body.classList.toggle("dark");
-
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
 }
+
+function updateClock() {
+
+    const now = new Date();
+
+    const time = now.toLocaleTimeString();
+
+    const clock = document.getElementById("clock");
+
+    if(clock){
+        clock.innerHTML = time;
+    }
+}
+
+setInterval(updateClock,1000);
