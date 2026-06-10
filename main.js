@@ -108,3 +108,33 @@ alert(
 );
 
 }
+let temps = [
+"18°C",
+"22°C",
+"15°C",
+"30°C"
+];
+
+let status = [
+"Sunny",
+"Cloudy",
+"Rainy",
+"Windy"
+];
+
+function updateWeather(){
+
+let t =
+Math.floor(Math.random()*temps.length);
+
+document.getElementById(
+"weatherTemp"
+).innerHTML = temps[t];
+
+document.getElementById(
+"weatherStatus"
+).innerHTML = status[t];
+
+}
+
+setInterval(updateWeather,5000);
