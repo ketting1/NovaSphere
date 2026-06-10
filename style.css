@@ -239,24 +239,7 @@ border-radius:30px;
 border:none;
 }
 
-function searchSite(){
 
-let text =
-document.getElementById("searchBox").value;
-
-if(text === ""){
-
-alert("Type something first");
-
-return;
-
-}
-
-alert("You searched for: " + text);
-
-}
-
-/* Weather */
 
 .weather{
 padding:40px 20px;
