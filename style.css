@@ -203,3 +203,12 @@ border:none;
 border-radius:30px;
 cursor:pointer;
 }
+.weather{
+padding:40px 20px;
+text-align:center;
+}
+
+.weather .card{
+max-width:300px;
+margin:auto;
+}
