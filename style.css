@@ -1,49 +1,9 @@
 body{
 margin:0;
-font-family:Segoe UI,Arial,sans-serif;
+font-family:Segoe UI, Arial, sans-serif;
 background:linear-gradient(135deg,#0f172a,#1e293b);
 color:white;
 }
-
-nav{
-background:#111827;
-padding:20px;
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-.logo{
-font-size:32px;
-font-weight:800;
-text-align:center;
-padding:20px;
-}
-
-.card{
-background:rgba(255,255,255,0.08);
-backdrop-filter:blur(10px);
-border-radius:20px;
-padding:25px;
-}
-
-.hero{
-text-align:center;
-padding:100px 20px;
-background:linear-gradient(
-135deg,
-#2563eb,
-#06b6d4
-);
-}
-
 
 /* Navigation */
 
@@ -68,21 +28,11 @@ nav a:hover{
 color:#38bdf8;
 }
 
-/* Header */
-
-header{
-background:#0f172a;
-color:white;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
-}
-
 .logo{
 font-size:32px;
 font-weight:800;
 letter-spacing:1px;
+color:white;
 }
 
 /* Hero */
@@ -90,11 +40,7 @@ letter-spacing:1px;
 .hero{
 text-align:center;
 padding:100px 20px;
-background:linear-gradient(
-135deg,
-#2563eb,
-#06b6d4
-);
+background:linear-gradient(135deg,#2563eb,#06b6d4);
 color:white;
 }
 
@@ -135,6 +81,7 @@ padding:50px 20px;
 
 .card{
 background:white;
+color:#222;
 width:260px;
 padding:30px;
 border-radius:24px;
@@ -160,6 +107,7 @@ padding:50px 20px;
 
 .stat{
 background:white;
+color:#222;
 padding:25px;
 border-radius:20px;
 min-width:180px;
@@ -186,7 +134,42 @@ text-align:center;
 
 #clock{
 font-size:48px;
-color:#2563eb;
+color:#38bdf8;
+}
+
+/* Weather */
+
+.weather{
+padding:40px 20px;
+text-align:center;
+}
+
+/* Search */
+
+.search-section{
+text-align:center;
+padding:40px;
+}
+
+.search-section input{
+padding:12px;
+width:250px;
+border-radius:30px;
+border:none;
+}
+
+.search-section button{
+padding:12px 20px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+}
+
+/* News */
+
+.news{
+padding:40px 20px;
+text-align:center;
 }
 
 /* Assistant */
@@ -206,46 +189,23 @@ border:1px solid #ccc;
 
 .assistant button{
 margin-top:15px;
+padding:12px 20px;
+border:none;
+border-radius:30px;
+cursor:pointer;
 }
 
 #answerBox{
 margin-top:20px;
 padding:20px;
 background:white;
+color:#222;
 border-radius:20px;
 max-width:600px;
 margin-left:auto;
 margin-right:auto;
 box-shadow:0 5px 15px rgba(0,0,0,.1);
 min-height:60px;
-}
-
-/* Search */
-
-.search-section{
-text-align:center;
-padding:40px;
-}
-
-.search-section input{
-padding:12px;
-width:250px;
-border-radius:30px;
-border:none;
-}
-
-
-
-.weather{
-padding:40px 20px;
-text-align:center;
-}
-
-/* News */
-
-.news{
-padding:40px 20px;
-text-align:center;
 }
 
 /* Footer */
