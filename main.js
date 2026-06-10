@@ -184,3 +184,37 @@ Math.floor(Math.random()*worldNewsList.length)
 updateNews();
 
 setInterval(updateNews,10000);
+function animateValue(id, start, end, duration) {
+
+let current = start;
+
+let range = end - start;
+
+let increment = range / (duration / 20);
+
+let timer = setInterval(() => {
+
+current += increment;
+
+if(current >= end){
+
+current = end;
+
+clearInterval(timer);
+
+}
+
+document.getElementById(id).innerText =
+Math.floor(current);
+
+},20);
+
+}
+
+animateValue("aiCount",0,150,2000);
+
+animateValue("courseCount",0,80,2000);
+
+animateValue("memberCount",0,5000,2500);
+
+animateValue("countryCount",0,195,2000);
