@@ -98,3 +98,13 @@ document.getElementById("answerBox")
 .innerHTML = answer;
 
 }
+function searchSite(){
+
+let text =
+document.getElementById("searchBox").value;
+
+alert(
+"You searched for: " + text
+);
+
+}
