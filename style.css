@@ -29,10 +29,12 @@ color:#38bdf8;
 }
 
 .logo{
-font-size:32px;
+font-size:40px;
 font-weight:800;
-letter-spacing:1px;
+letter-spacing:2px;
 color:white;
+text-align:center;
+padding:15px;
 }
 
 /* Hero */
