@@ -236,3 +236,34 @@ return;
 alert("You searched for: " + text);
 
 }
+function showCountry(country){
+
+let info = "";
+
+if(country === "Australia"){
+info = "🇦🇺 Australia is a leader in technology, mining and education.";
+}
+
+else if(country === "USA"){
+info = "🇺🇸 USA leads in AI, startups and innovation.";
+}
+
+else if(country === "Japan"){
+info = "🇯🇵 Japan is famous for robotics and advanced technology.";
+}
+
+else if(country === "Senegal"){
+info = "🇸🇳 Senegal is growing in technology and entrepreneurship.";
+}
+
+else if(country === "UK"){
+info = "🇬🇧 UK is a global center for finance and innovation.";
+}
+
+else if(country === "Canada"){
+info = "🇨🇦 Canada is known for AI research and quality education.";
+}
+
+document.getElementById("countryInfo").innerHTML = info;
+
+}
