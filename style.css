@@ -1,1 +1,247 @@
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#f5f7fa;
+color:#222;
+}
 
+/* Navigation */
+
+nav{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+padding:15px;
+background:#0f172a;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* Header */
+
+header{
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+.logo{
+font-size:32px;
+font-weight:800;
+letter-spacing:1px;
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(
+135deg,
+#2563eb,
+#06b6d4
+);
+color:white;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.hero h3{
+font-weight:400;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.hero button{
+background:white;
+color:#2563eb;
+border:none;
+padding:15px 30px;
+border-radius:40px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* Cards */
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:50px 20px;
+}
+
+.card{
+background:white;
+width:260px;
+padding:30px;
+border-radius:24px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+border:1px solid #e5e7eb;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* Stats */
+
+.stats{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+padding:50px 20px;
+}
+
+.stat{
+background:white;
+padding:25px;
+border-radius:20px;
+min-width:180px;
+text-align:center;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.stat h2{
+font-size:36px;
+color:#2563eb;
+margin:0;
+}
+
+.stat p{
+font-weight:bold;
+}
+
+/* Clock */
+
+.clock-section{
+padding:40px 20px;
+text-align:center;
+}
+
+#clock{
+font-size:48px;
+color:#2563eb;
+}
+
+/* Assistant */
+
+.assistant{
+text-align:center;
+padding:50px 20px;
+}
+
+.assistant input{
+width:80%;
+max-width:500px;
+padding:15px;
+border-radius:30px;
+border:1px solid #ccc;
+}
+
+.assistant button{
+margin-top:15px;
+}
+
+#answerBox{
+margin-top:20px;
+padding:20px;
+background:white;
+border-radius:20px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+min-height:60px;
+}
+
+/* Search */
+
+.search-section{
+text-align:center;
+padding:40px;
+}
+
+.search-section input{
+padding:12px;
+width:250px;
+border-radius:30px;
+border:none;
+}
+
+.search-section button{
+padding:12px 20px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+}
+
+/* Weather */
+
+.weather{
+padding:40px 20px;
+text-align:center;
+}
+
+/* News */
+
+.news{
+padding:40px 20px;
+text-align:center;
+}
+
+/* Footer */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Dark Mode */
+
+.dark{
+background:#111827;
+color:white;
+}
+
+.dark .card{
+background:#1f2937;
+color:white;
+}
+
+.dark .stat{
+background:#1f2937;
+color:white;
+}
+
+.dark #answerBox{
+background:#1f2937;
+color:white;
+}
