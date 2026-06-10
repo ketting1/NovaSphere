@@ -293,3 +293,12 @@ padding:10px 20px;
 border-radius:20px;
 cursor:pointer;
 }
+.opportunities{
+padding:60px 20px;
+text-align:center;
+}
+
+.opportunities h2{
+margin-bottom:40px;
+font-size:36px;
+}
