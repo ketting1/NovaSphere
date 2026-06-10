@@ -55,6 +55,48 @@ function askNovaSphere(){
 
 let question =
 document.getElementById("userQuestion")
+.value
+.toLowerCase();
+
+let answer = "";
+
+if(question.includes("ai")){
+
+answer =
+"🤖 AI is transforming business, education and technology worldwide.";
+
+}
+
+else if(question.includes("business")){
+
+answer =
+"💼 Online business opportunities include freelancing, affiliate marketing and e-commerce.";
+
+}
+
+else if(question.includes("learn")){
+
+answer =
+"📚 Learning new skills every day is the fastest way to grow.";
+
+}
+
+else if(question.includes("world")){
+
+answer =
+"🌎 NovaSphere connects people and opportunities across the globe.";
+
+}
+
+else{
+
+answer =
+"✨ NovaSphere is still learning. Try asking about AI, business, learning or 
+
+}
+
+
+document.getElementById("userQuestion")
 .value.toLowerCase();
 
 let answer = "";
