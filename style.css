@@ -238,3 +238,21 @@ color:white;
 background:#1f2937;
 color:white;
 }
+.tools{
+text-align:center;
+padding:60px 20px;
+}
+
+.tools h2{
+margin-bottom:40px;
+font-size:36px;
+}
+
+.tools button{
+background:#2563eb;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:20px;
+cursor:pointer;
+}
