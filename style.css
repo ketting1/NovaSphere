@@ -302,3 +302,12 @@ text-align:center;
 margin-bottom:40px;
 font-size:36px;
 }
+.world-map{
+padding:60px 20px;
+text-align:center;
+}
+
+#countryInfo{
+max-width:700px;
+margin:30px auto;
+}
