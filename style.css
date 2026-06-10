@@ -185,3 +185,21 @@ margin-right:auto;
 box-shadow:0 5px 15px rgba(0,0,0,.1);
 min-height:60px;
 }
+.search-section{
+text-align:center;
+padding:40px;
+}
+
+.search-section input{
+padding:12px;
+width:250px;
+border-radius:30px;
+border:none;
+}
+
+.search-section button{
+padding:12px 20px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+}
