@@ -138,3 +138,49 @@ document.getElementById(
 }
 
 setInterval(updateWeather,5000);
+let aiNewsList = [
+"New AI tools are transforming education.",
+"AI is helping businesses automate tasks.",
+"Developers are building smarter assistants."
+];
+
+let businessNewsList = [
+"Online businesses continue to grow.",
+"Remote work creates new opportunities.",
+"Digital marketing remains in demand."
+];
+
+let worldNewsList = [
+"Technology adoption is increasing worldwide.",
+"Renewable energy projects are expanding.",
+"Global innovation continues to accelerate."
+];
+
+function updateNews(){
+
+document.getElementById(
+"aiNews"
+).innerHTML =
+aiNewsList[
+Math.floor(Math.random()*aiNewsList.length)
+];
+
+document.getElementById(
+"businessNews"
+).innerHTML =
+businessNewsList[
+Math.floor(Math.random()*businessNewsList.length)
+];
+
+document.getElementById(
+"worldNews"
+).innerHTML =
+worldNewsList[
+Math.floor(Math.random()*worldNewsList.length)
+];
+
+}
+
+updateNews();
+
+setInterval(updateNews,10000);
