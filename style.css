@@ -276,3 +276,20 @@ padding:12px 20px;
 border-radius:25px;
 cursor:pointer;
 }
+.courses{
+padding:60px 20px;
+text-align:center;
+}
+
+.courses h2{
+margin-bottom:40px;
+}
+
+.courses button{
+background:#2563eb;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:20px;
+cursor:pointer;
+}
