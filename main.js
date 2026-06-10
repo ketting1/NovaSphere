@@ -220,3 +220,19 @@ if (worldNews) {
 
 updateNews();
 setInterval(updateNews, 10000);
+function searchSite() {
+
+let text =
+document.getElementById("searchBox").value;
+
+if(text === "") {
+
+alert("Type something first");
+
+return;
+
+}
+
+alert("You searched for: " + text);
+
+}
