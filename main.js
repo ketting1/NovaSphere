@@ -1,262 +1,222 @@
 console.log("NovaSphere Loaded");
 
+/* Dark Mode */
+
 function toggleDarkMode() {
-    document.body.classList.toggle("dark");
+document.body.classList.toggle("dark");
 }
+
+/* Clock */
 
 function updateClock() {
+const now = new Date();
+const time = now.toLocaleTimeString();
 
-    const now = new Date();
+const clock = document.getElementById("clock");
 
-    const time = now.toLocaleTimeString();
-
-    const clock = document.getElementById("clock");
-
-    if(clock){
-        clock.innerHTML = time;
-    }
+if (clock) {
+    clock.innerHTML = time;
 }
 
-setInterval(updateClock,1000);
-function animateValue(id,start,end,duration){
+}
+
+updateClock();
+setInterval(updateClock, 1000);
+
+/* Counters */
+
+function animateValue(id, start, end, duration) {
 
 let current = start;
 
-const increment = end / (duration / 20);
+let increment = (end - start) / (duration / 20);
 
-const obj = document.getElementById(id);
+let timer = setInterval(() => {
 
-const timer = setInterval(function(){
+    current += increment;
 
-current += increment;
+    if (current >= end) {
+        current = end;
+        clearInterval(timer);
+    }
 
-if(current >= end){
+    const element = document.getElementById(id);
 
-current = end;
+    if (element) {
+        element.innerHTML = Math.floor(current);
+    }
 
-clearInterval(timer);
+}, 20);
 
 }
 
-obj.innerHTML = Math.floor(current);
+animateValue("aiCount", 0, 150, 2000);
+animateValue("courseCount", 0, 80, 2000);
+animateValue("memberCount", 0, 5000, 2500);
+animateValue("countryCount", 0, 195, 2000);
 
-},20);
+/* Assistant */
 
-}
+function askNovaSphere() {
 
-animateValue("aiCount",0,100,2000);
-
-animateValue("courseCount",0,50,2000);
-
-animateValue("memberCount",0,10000,2500);
-
-animateValue("countryCount",0,190,2000);
-function askNovaSphere(){
-
-let question =
-document.getElementById("userQuestion")
-.value
-.toLowerCase();
+let question = document
+    .getElementById("userQuestion")
+    .value
+    .toLowerCase();
 
 let answer = "";
 
-if(question.includes("ai")){
+if (question.includes("coding")) {
 
-answer =
-"🤖 AI is transforming business, education and technology worldwide.";
-
-}
-
-else if(question.includes("business")){
-
-answer =
-"💼 Online business opportunities include freelancing, affiliate marketing and e-commerce.";
+    answer =
+    "💻 Start with HTML, CSS and JavaScript. Build small projects every day.";
 
 }
 
-else if(question.includes("learn")){
+else if (question.includes("ai")) {
 
-answer =
-"📚 Learning new skills every day is the fastest way to grow.";
-
-}
-
-else if(question.includes("world")){
-
-answer =
-"🌎 NovaSphere connects people and opportunities across the globe.";
+    answer =
+    "🤖 AI is technology that learns from data and helps automate tasks.";
 
 }
 
-else{
+else if (question.includes("business")) {
 
-answer =
-"✨ NovaSphere is still learning. Try asking about AI, business, learning or 
-
-}
-
-
-document.getElementById("userQuestion")
-.value.toLowerCase();
-
-let answer = "";
-
-if(question.includes("coding")){
-
-answer =
-"Start with HTML, CSS and JavaScript. Build small projects every day.";
+    answer =
+    "💼 Start by solving a problem and creating value for people.";
 
 }
 
-else if(question.includes("ai")){
+else if (question.includes("money")) {
 
-answer =
-"AI is technology that learns from data and helps automate tasks.";
-
-}
-
-else if(question.includes("business")){
-
-answer =
-"Start by solving a problem people have and offer a valuable solution.";
+    answer =
+    "💰 You can earn online through freelancing, affiliate marketing, content creation and digital products.";
 
 }
 
-else if(question.includes("money")){
+else if (question.includes("learn")) {
 
-answer =
-"You can earn online through freelancing, affiliate marketing, content creation and digital products.";
-
-}
-
-else{
-
-answer =
-"Great question. NovaSphere is still learning. More answers coming soon.";
+    answer =
+    "📚 Learning consistently every day is one of the best investments you can make.";
 
 }
 
-document.getElementById("answerBox")
-.innerHTML = answer;
+else if (question.includes("world")) {
+
+    answer =
+    "🌎 NovaSphere connects people, knowledge and opportunities across the world.";
 
 }
-function searchSite(){
+
+else {
+
+    answer =
+    "✨ NovaSphere is still learning. Try asking about AI, coding, business, money or learning.";
+
+}
+
+document.getElementById("answerBox").innerHTML = answer;
+
+}
+
+/* Search */
+
+function searchSite() {
 
 let text =
 document.getElementById("searchBox").value;
 
-alert(
-"You searched for: " + text
-);
+alert("You searched for: " + text);
 
 }
-let temps = [
+
+/* Weather */
+
+const temps = [
 "18°C",
 "22°C",
 "15°C",
 "30°C"
 ];
 
-let status = [
+const status = [
 "Sunny",
 "Cloudy",
 "Rainy",
 "Windy"
 ];
 
-function updateWeather(){
+function updateWeather() {
 
-let t =
-Math.floor(Math.random()*temps.length);
+let random =
+Math.floor(Math.random() * temps.length);
 
-document.getElementById(
-"weatherTemp"
-).innerHTML = temps[t];
+const temp =
+document.getElementById("weatherTemp");
 
-document.getElementById(
-"weatherStatus"
-).innerHTML = status[t];
+const weather =
+document.getElementById("weatherStatus");
+
+if (temp) {
+    temp.innerHTML = temps[random];
+}
+
+if (weather) {
+    weather.innerHTML = status[random];
+}
 
 }
 
-setInterval(updateWeather,5000);
-let aiNewsList = [
+updateWeather();
+setInterval(updateWeather, 5000);
+
+/* News */
+
+const aiNewsList = [
 "New AI tools are transforming education.",
 "AI is helping businesses automate tasks.",
 "Developers are building smarter assistants."
 ];
 
-let businessNewsList = [
+const businessNewsList = [
 "Online businesses continue to grow.",
 "Remote work creates new opportunities.",
 "Digital marketing remains in demand."
 ];
 
-let worldNewsList = [
+const worldNewsList = [
 "Technology adoption is increasing worldwide.",
 "Renewable energy projects are expanding.",
 "Global innovation continues to accelerate."
 ];
 
-function updateNews(){
+function updateNews() {
 
-document.getElementById(
-"aiNews"
-).innerHTML =
-aiNewsList[
-Math.floor(Math.random()*aiNewsList.length)
-];
+const aiNews =
+document.getElementById("aiNews");
 
-document.getElementById(
-"businessNews"
-).innerHTML =
-businessNewsList[
-Math.floor(Math.random()*businessNewsList.length)
-];
+const businessNews =
+document.getElementById("businessNews");
 
-document.getElementById(
-"worldNews"
-).innerHTML =
-worldNewsList[
-Math.floor(Math.random()*worldNewsList.length)
-];
+const worldNews =
+document.getElementById("worldNews");
+
+if (aiNews) {
+    aiNews.innerHTML =
+    aiNewsList[Math.floor(Math.random() * aiNewsList.length)];
+}
+
+if (businessNews) {
+    businessNews.innerHTML =
+    businessNewsList[Math.floor(Math.random() * businessNewsList.length)];
+}
+
+if (worldNews) {
+    worldNews.innerHTML =
+    worldNewsList[Math.floor(Math.random() * worldNewsList.length)];
+}
 
 }
 
 updateNews();
-
-setInterval(updateNews,10000);
-function animateValue(id, start, end, duration) {
-
-let current = start;
-
-let range = end - start;
-
-let increment = range / (duration / 20);
-
-let timer = setInterval(() => {
-
-current += increment;
-
-if(current >= end){
-
-current = end;
-
-clearInterval(timer);
-
-}
-
-document.getElementById(id).innerText =
-Math.floor(current);
-
-},20);
-
-}
-
-animateValue("aiCount",0,150,2000);
-
-animateValue("courseCount",0,80,2000);
-
-animateValue("memberCount",0,5000,2500);
-
-animateValue("countryCount",0,195,2000);
+setInterval(updateNews, 10000);
