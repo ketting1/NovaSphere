@@ -222,3 +222,30 @@ margin:auto;
 padding:40px 20px;
 text-align:center;
 }
+.assistant{
+text-align:center;
+padding:50px 20px;
+}
+
+.assistant input{
+width:80%;
+max-width:500px;
+padding:15px;
+border-radius:30px;
+border:1px solid #ccc;
+}
+
+.assistant button{
+margin-top:15px;
+}
+
+#answerBox{
+margin-top:20px;
+padding:20px;
+background:white;
+border-radius:20px;
+max-width:600px;
+margin-left:auto;
+margin-right:auto;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
