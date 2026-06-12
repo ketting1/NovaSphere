@@ -41,9 +41,10 @@ color:#38bdf8;
 font-size:40px;
 font-weight:800;
 letter-spacing:2px;
-color:white;
+color:#fbbf24;
 text-align:center;
 padding:15px;
+text-shadow:0 0 10px rgba(251,191,36,0.5);
 }
 
 /* Hero */
