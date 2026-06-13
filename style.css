@@ -394,3 +394,28 @@ transform:translateY(-10px) scale(1.03);
 box-shadow:0 0 25px rgba(251,191,36,0.6);
 
 }
+.globe-container{
+display:flex;
+justify-content:center;
+margin-bottom:20px;
+}
+
+.globe{
+font-size:100px;
+
+animation:spinGlobe 15s linear infinite;
+
+filter:drop-shadow(0 0 20px #06b6d4);
+}
+
+@keyframes spinGlobe{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
