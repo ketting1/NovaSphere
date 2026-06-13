@@ -1,1 +1,501 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NovaSphere</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body >
+<nav>
+<div class="logo">
+🌍 NovaSphere AI
+</div>
+<a href="index.html">Home</a>
+<a href="ai.html">AI</a>
+<a href="learning.html">Learning</a>
+<a href="business.html">Business</a>
+<a href="contact.html">Contact</a>
+<a href="dashboard.html">Dashboard</a>
+
+
+<a href="login.html">Login</a>
+<button onclick="toggleDarkMode()">
+🌙
+</button>
+</nav>
+<header>
+
+</header>
+
+
+
+<section class="hero">
+
+<div class="globe-container">
+    <div class="globe">🌍</div>
+</div>
+
+<h1>Learn. Create. Build The Future.</h1>
+<h3>One Platform. Unlimited Possibilities.</h3>
+
+<p>
+AI, Education, Technology and Business
+for everyone around the world.
+</p>
+
+<button>Get Started</button>
+
+</section>
+
+<section class="clock-section">
+
+<div class="card">
+
+<h2>🕒 Current Time</h2>
+
+<h1 id="clock">--:--:--</h1>
+
+</div>
+
+</section>
+<section class="weather">
+
+<div class="card">
+
+<h2>🌤 World Weather</h2>
+
+<h3>Melbourne</h3>
+
+<p id="weatherTemp">18°C</p>
+
+<p id="weatherStatus">Sunny</p>
+
+</div>
+
+</section>
+<section class="cards">
+
+<div class="card">
+<h2>ChatGPT</h2>
+<p>AI assistant for writing and coding.</p>
+</div>
+
+<div class="card">
+<h2>Claude</h2>
+<p>Advanced AI reasoning assistant.</p>
+</div>
+
+<div class="card">
+<h2>Gemini</h2>
+<p>Google AI ecosystem.</p>
+</div>
+
+</section>
+<section class="tools">
+
+<h2>🔥 Featured AI Tools</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>ChatGPT</h3>
+<p>Writing, coding and productivity.</p>
+<button>Learn More</button>
+</div>
+
+<div class="card">
+<h3>Claude</h3>
+<p>Reasoning and research assistant.</p>
+<button>Learn More</button>
+</div>
+
+<div class="card">
+<h3>Gemini</h3>
+<p>Google AI ecosystem.</p>
+<button>Learn More</button>
+</div>
+
+</div>
+
+</section>
+  
+<section class="cards">
+
+<div class="card">
+<h2>🇦🇺 Australia</h2>
+<p>Technology & Innovation</p>
+</div>
+
+<div class="card">
+<h2>🇺🇸 USA</h2>
+<p>AI & Startups</p>
+</div>
+
+<div class="card">
+<h2>🇯🇵 Japan</h2>
+<p>Robotics & Future Tech</p>
+</div>
+
+<div class="card">
+<h2>🇸🇳 Senegal</h2>
+<p>African Innovation</p>
+</div>
+</section>
+<section class="stats">
+
+<div class="stat">
+<h2 id="aiCount">0</h2>
+<p>AI Tools</p>
+</div>
+
+<div class="stat">
+<h2 id="courseCount">0</h2>
+<p>Courses</p>
+</div>
+
+<div class="stat">
+<h2 id="memberCount">0</h2>
+<p>Members</p>
+</div>
+
+<div class="stat">
+<h2 id="countryCount">0</h2>
+<p>Countries</p>
+</div>
+
+</section>
+<section class="profile">
+
+<div class="card">
+
+<h2>👤 User Profile</h2>
+
+<img
+src="https://via.placeholder.com/120"
+alt="Profile"
+class="profile-pic"
+>
+
+<h3>Guest User</h3>
+
+<p>Explorer of AI, Learning and Business</p>
+
+<button>Edit Profile</button>
+
+</div>
+
+</section>
+ <section class="courses">
+
+<h2>📚 Featured Courses</h2>
+<div class="card">
+<h3>AI Fundamentals</h3>
+<p>Learn how artificial intelligence works.</p>
+
+<button onclick="window.location.href='ai-course.html'">
+Start Learning
+</button>
+
+</div>
+<div class="card">
+<h3>Web Development</h3>
+<p>Build websites using HTML, CSS and JavaScript.</p>
+
+<button onclick="window.location.href='webdev-course.html'">
+Start Learning
+</button>
+
+</div>
+<div class="card">
+<h3>Online Business</h3>
+<p>Learn affiliate marketing and digital business.</p>
+
+<button onclick="window.location.href='business-course.html'">
+Start Learning
+</button>
+
+</div>
+
+</section>
+<section class="news">
+
+<h2>🌎 World News</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🤖 AI News</h3>
+<p id="aiNews">
+Loading...
+</p>
+</div>
+
+<div class="card">
+<h3>💼 Business News</h3>
+<p id="businessNews">
+Loading...
+</p>
+</div>
+
+<div class="card">
+<h3>🌍 Global News</h3>
+<p id="worldNews">
+Loading...
+</p>
+</div>
+
+</div>
+
+</section>
+<section class="opportunities">
+
+<h2>🌍 Global Opportunities</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>💻 Remote Jobs</h3>
+<p>Work online from anywhere in the world.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Startups</h3>
+<p>Discover innovative companies and ideas.</p>
+</div>
+
+<div class="card">
+<h3>🎓 Scholarships</h3>
+<p>Find learning opportunities worldwide.</p>
+</div>
+
+<div class="card">
+<h3>🌐 Digital Skills</h3>
+<p>Build skills for the future economy.</p>
+</div>
+
+</div>
+
+</section>
+ <section class="world-map">
+
+<h2>🌎 Explore The World</h2>
+
+<div class="cards">
+
+<div class="card" onclick="showCountry('Australia')">
+🇦🇺 Australia
+</div>
+
+<div class="card" onclick="showCountry('USA')">
+🇺🇸 USA
+</div>
+
+<div class="card" onclick="showCountry('Japan')">
+🇯🇵 Japan
+</div>
+
+<div class="card" onclick="showCountry('Senegal')">
+🇸🇳 Senegal
+</div>
+
+<div class="card" onclick="showCountry('UK')">
+🇬🇧 United Kingdom
+</div>
+
+<div class="card" onclick="showCountry('Canada')">
+🇨🇦 Canada
+</div>
+
+</div>
+
+<div id="countryInfo" class="card">
+
+Click a country to learn more.
+
+</div>
+
+</section>
+ <section class="hero">
+
+<h2>Why NovaSphere?</h2>
+
+
+
+
+<section class="search-section">
+
+<h2>🔍 Search NovaSphere</h2>
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search NovaSphere..."
+>
+
+<button onclick="searchSite()">
+Search
+</button>
+
+</section>
+<section class="assistant">
+
+<h2>🤖 NovaSphere Assistant</h2>
+
+<input
+type="text"
+id="userQuestion"
+placeholder="Ask NovaSphere anything..."
+>
+
+<button onclick="askNovaSphere()">
+Ask
+</button>
+
+<div id="answerBox">
+
+Your answer will appear here.
+
+</div>
+
+</section> 
+<section class="courses"><h2>🎓 NovaSphere Academy</h2><div class="cards"><div class="card">
+<h3>🟢 Beginner Path</h3>
+<p>
+Start with AI Fundamentals and learn the basics.
+</p>
+<button onclick="window.location.href='ai-course.html'">
+Start Path
+</button>
+</div><div class="card">
+<h3>🔵 Intermediate Path</h3>
+<p>
+Build websites and digital skills with Web Development.
+</p>
+<button onclick="window.location.href='webdev-course.html'">
+Start Path
+</button>
+</div><div class="card">
+<h3>🟠 Advanced Path</h3>
+<p>
+Learn affiliate marketing and online business.
+</p>
+<button onclick="window.location.href='business-course.html'">
+Start Path
+</button>
+</div><div class="card">
+<h3>🏆 Expert Path</h3>
+<p>
+Complete all courses and become a NovaSphere Master.
+</p>
+<button onclick="window.location.href='certificate.html'">
+View Goal
+</button>
+</div></div></section>
+<section class="cards"><h2 style="text-align:center;width:100%;">
+🏅 Achievement Badges
+</h2><div class="card">
+<h2>🤖 AI Explorer</h2>
+<p>Completed AI Fundamentals</p>
+</div><div class="card">
+<h2>💻 Developer</h2>
+<p>Completed Web Development</p>
+</div><div class="card">
+<h2>💼 Entrepreneur</h2>
+<p>Completed Online Business</p>
+</div><div class="card">
+<h2>🌍 NovaSphere Master</h2>
+<p>Completed All Courses</p>
+</div></section>
+
+<section class="courses"><h2>🛒 NovaSphere Marketplace</h2><div class="cards"><div class="card">
+<h3>🤖 AI Tools</h3>
+<p>
+Discover useful AI tools and resources.
+</p>
+<button>
+Explore
+</button>
+</div><div class="card">
+<h3>📚 Premium Courses</h3>
+<p>
+Advanced learning content and tutorials.
+</p>
+<button>
+View Courses
+</button>
+</div><div class="card">
+<h3>🎨 Templates</h3>
+<p>
+Website, business and content templates.
+</p>
+<button>
+Browse
+</button>
+</div><div class="card">
+<h3>💰 Business Resources</h3>
+<p>
+Affiliate marketing and online business tools.
+</p>
+<button>
+Open
+</button>
+</div></div></section>
+<div class="card">
+<h2>🤖 AI</h2>
+<p>Discover powerful AI tools.</p>
+</div>
+
+<div class="card">
+<h2>📚 Learning</h2>
+<p>Build valuable skills.</p>
+</div>
+
+<div class="card">
+<h2>💼 Business</h2>
+<p>Start and grow online.</p>
+</div>
+
+<div class="card">
+<h2>🌎 World</h2>
+<p>Explore global opportunities.</p>
+</div>
+
+</section>
+<section class="stats"><h2>📊 Learning Progress</h2><div class="stat">
+<h2>100%</h2>
+<p>AI Fundamentals</p>
+</div><div class="stat">
+<h2>100%</h2>
+<p>Web Development</p>
+</div><div class="stat">
+<h2>100%</h2>
+<p>Online Business</p>
+</div><div class="stat">
+<h2>100%</h2>
+<p>Overall Progress</p>
+</div></section>
+<footer>
+
+<h3>🌍 NovaSphere</h3>
+
+<p>
+Connecting people through AI,
+learning, business and innovation.
+</p>
+
+<p>© 2026 NovaSphere</p>
+
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+
+</html>
