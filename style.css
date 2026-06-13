@@ -392,7 +392,10 @@ border:1px solid rgba(255,255,255,0.1);
 transform:translateY(-10px) scale(1.03);
 
 box-shadow:0 0 25px rgba(251,191,36,0.6);
-
+filter:
+drop-shadow(0 0 10px #06b6d4)
+drop-shadow(0 0 20px #2563eb)
+drop-shadow(0 0 40px #06b6d4);
 }
 .globe-container{
 display:flex;
@@ -405,7 +408,7 @@ font-size:100px;
 
 animation:spinGlobe 15s linear infinite;
 
-filter:drop-shadow(0 0 20px #06b6d4);
+
 }
 
 @keyframes spinGlobe{
