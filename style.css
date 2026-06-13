@@ -364,17 +364,34 @@ margin:auto;
 }
 
 .card{
-background:white;
-color:#222;
+backg.card{
+
+background:rgba(255,255,255,0.08);
+
+backdrop-filter:blur(10px);
+
+color:white;
+
 width:280px;
+
 padding:30px;
+
 border-radius:24px;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+box-shadow:0 0 15px rgba(6,182,212,0.3);
+
 text-align:center;
+
 transition:.3s;
-border:none;
+
+border:1px solid rgba(255,255,255,0.1);
+
 }
 
 .card:hover{
+
 transform:translateY(-10px) scale(1.03);
+
+box-shadow:0 0 25px rgba(251,191,36,0.6);
+
 }
