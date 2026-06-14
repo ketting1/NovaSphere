@@ -422,3 +422,22 @@ transform:rotate(360deg);
 }
 
 }
+.cards-section{
+text-align:center;
+padding:80px 20px;
+}
+
+.cards-section h2{
+font-size:38px;
+margin-bottom:40px;
+color:white;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+max-width:1400px;
+margin:auto;
+}
